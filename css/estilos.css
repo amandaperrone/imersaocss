@@ -1,0 +1,42 @@
+/* Aula inicial :D */
+body {
+    background-image: url('https://www.publicdomainpictures.net/pictures/210000/velka/white-wall-texture-background.jpg');
+    background-size: auto 100vh; /*auto: mantem proporção*/
+    font-family: Calibri;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #FFA07A;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around; /*justify precisa do display flex pra funcionar*/
+    
+  }
+  .menu li {/*todas as li que estão dentro do menu*/
+    list-style: none;  
+  }
+  
+  a {
+    text-decoration: none;
+    color: teal;
+  }
+  
+  a:hover { /*classe com pseudoclasse*/
+    text-decoration: underline;
+  }
+  
+  .site-subtitle, /*aplica as propriedades nos dois*/ 
+  .site-title {
+    color: teal; /*dica: organizar em ordem alfabetica*/
+    text-align: center;
+    
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
+  
+  
