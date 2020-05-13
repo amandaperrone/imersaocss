@@ -1,46 +1,101 @@
-/* Aula inicial :D */
+* { /* aplica ao começo por padrão, reset css */
+  /*soft reset*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-image: url('https://wallpaperaccess.com/full/42332.png');
     background-size: auto 100vh; /*auto: mantem proporção*/
-    
+    background-position-x: center;
     font-family: Courier New;
-    height: auto 100vh;
+    height: 100vh;
+    font-size: 10px;
+}
+
+/* se a tela tiver pelo menos 400px, vai carregar o que está dentro do {} */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
   }
+
+}
+
+/* breakpoints*/
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+}
+
+/* breakpoints*/
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  .menu {
+.menu {
     background-color: #23082E;
-    font-size: 25px;
-    border-radius: 10px;
-  }
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
   
-  .menu ul {
+.menu ul {
     display: flex;
     justify-content: space-around; /*justify precisa do display flex pra funcionar*/
     
-  }
-  .menu li {/*todas as li que estão dentro do menu*/
+}
+
+.menu li {/*todas as li que estão dentro do menu*/
     list-style: none;  
-  }
+}
+
+.menu a {
+  display: block;
+  padding: 10px 30px;
+}
   
-  a {  
+a {  
     color: #FDE200;
     text-decoration: none;
   
-  }
+}
   
-  a:hover { /*classe com pseudoclasse*/
+a:hover { /*classe com pseudoclasse*/
     text-decoration: underline;
-  }
+    background-color: indigo;
+}
   
-  .site-subtitle, /*aplica as propriedades nos dois*/ 
-  .site-title {
+.site-subtitle, /*aplica as propriedades nos dois*/ 
+.site-title {
     color: white; /*dica: organizar em ordem alfabetica*/
     text-align: center;
     
-  }
-  
-  .site-subtitle {
+}
+
+.site-title {
+  font-size: 4em;
+}
+
+
+.site-subtitle {
     font-style: italic;
-  }
+}
   
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
   
